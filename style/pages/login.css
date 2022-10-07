@@ -1,0 +1,4 @@
+.dv-login >.dv-wrapper {
+    max-width: var(--dv-main-wrapper);
+    background-color: blue;
+}
