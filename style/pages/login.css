@@ -1,4 +1,35 @@
 .dv-login >.dv-wrapper {
     max-width: var(--dv-main-wrapper);
+    margin: 0px auto;     
+}
+
+.dv-login >.dv-wrapper > .dv-header {
+    height: var(--dv-header-size);
+    background: green;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.15);
+    width: 100%;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.dv-login >.dv-wrapper > .dv-header >.wrapper {
+    max-width: var(--dv-main-wrapper);
+    margin: 0 auto;
+    background-color: rgb(109, 199, 109);
+}
+
+.dv-login >.dv-wrapper >.main-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-top: var(--dv-header-size);
+}
+
+.dv-login >.dv-wrapper >.main-content >.left {  
     background-color: blue;
+}
+
+.dv-login >.dv-wrapper >.main-content >.right {
+    background-color: red;
 }

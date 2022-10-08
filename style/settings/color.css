@@ -1,0 +1,14 @@
+:root {
+
+  /* PRIMARY */  
+  --dv-color-primary: #0041BE;
+
+  /* DANGER */
+  --dv-color-danger: #FF2222;
+
+  /* GRAY */
+  --dv-color-gray-lighter: #F9FBFD;
+  --dv-color-gray-light: #B8B7B7;
+  --dv-color-gray: #767684;
+  --dv-color-gray-dark: #09090A;
+}
