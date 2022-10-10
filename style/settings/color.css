@@ -1,6 +1,7 @@
 :root {
 
   /* PRIMARY */  
+  --dv-color-primary-light: #004CD8;
   --dv-color-primary: #0041BE;
 
   /* DANGER */
