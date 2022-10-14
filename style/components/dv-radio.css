@@ -21,7 +21,7 @@
   height: 22px;
   width: 22px;
   border-radius: 50%;
-  border: 2px solid var(--dv-color-gray-dark);;
+  border: 2px solid var(--dv-color-gray-dark);
   position: absolute;
   top: 0;
   left: 0;
@@ -47,6 +47,6 @@
 }
 
 /* Mostra ponto quando radio button for checado */
-.dv-radio > input:checked ~ .checkmark::after {
+.dv-radio > input:checked ~ .checkmark:after {
   display: block;
 }
