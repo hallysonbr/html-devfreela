@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="style/settings/core.css" />
     <link rel="stylesheet" href="style/settings/wrapper.css" />
     <link rel="stylesheet" href="style/settings/color.css" />
+    <link rel="stylesheet" href="style/settings/text.css" />
 
     <!-- 2) GENERIC -->
     <link rel="stylesheet" href="style/generic/generic.css" />
@@ -31,6 +32,8 @@
 
     <!-- 5) COMPONENTS -->
     <link rel="stylesheet" href="style/components/dv-button.css" />
+    <link rel="stylesheet" href="style/components/dv-input.css" />
+    <link rel="stylesheet" href="style/components/dv-radio.css" />
 
     <!-- PAGES -->
     <link rel="stylesheet" href="style/pages/login.css" />
@@ -51,7 +54,22 @@
           </div>
         </header>
         <main class="main-content">
-          <div class="left"><button class="dv-button">Continuar</button></div>
+          <div class="left">
+            <!-- <button class="dv-button">Continuar</button> -->
+            <!-- <input class="dv-input" placeholder="Título" /> -->
+
+            <!-- <div class="dv-radio">
+              <label for="dev">Dev</label>
+              <input id="dev" type="radio" />
+            </div> -->
+
+            <!--Criando Radio Button do zero-->
+            <label class="dv-radio">
+              Dev
+              <input type="radio" />
+              <span class="checkmark"></span>
+            </label>
+          </div>
           <div class="right">
             <img
               class="image"

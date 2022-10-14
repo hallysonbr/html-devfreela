@@ -1,5 +1,5 @@
 html {
   background-color: var(--dv-color-gray-lighter);
-  font-family: 'Raleway', sans-serif;
+  font-family: var(--font-family-base);
   font-weight: 500;
 }

@@ -1,0 +1,52 @@
+/* Classe base dv-radio */
+.dv-radio {
+  position: relative;
+  padding-left: 32px;
+  padding-top: 2px;
+  cursor: pointer;
+  font-size: calc(var(--font-size-base) + 8px);
+  font-family: var(--font-family-base); 
+}
+
+/* Esconde o radio button nativo do browser */
+.dv-radio > input {
+  opacity: 0;
+  position: absolute;
+  cursor: pointer;
+}
+
+/* Estilo base do Checkmark */
+.dv-radio >.checkmark {
+  display: inline-block;
+  height: 22px;
+  width: 22px;
+  border-radius: 50%;
+  border: 2px solid var(--dv-color-gray-dark);;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* Estiliza e preenche fundo do Checkmark quando radio button é checado */
+.dv-radio > input:checked ~ .checkmark {
+  background-color: white;
+  border-color: var(--dv-color-primary);
+}
+
+/* Estilo base do ponto */
+.dv-radio >.checkmark:after {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  position: absolute;
+  content: "";
+  top: 3px;
+  left: 3px;
+  background-color: var(--dv-color-primary);
+  display: none;
+}
+
+/* Mostra ponto quando radio button for checado */
+.dv-radio > input:checked ~ .checkmark::after {
+  display: block;
+}
