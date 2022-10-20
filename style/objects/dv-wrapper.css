@@ -1,0 +1,30 @@
+.dv-wrapper {
+  max-width: var(--dv-main-wrapper);
+  margin: 0px auto;     
+}
+
+.dv-wrapper >.main-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding-top: var(--dv-header-size);
+}
+
+.dv-wrapper >.main-content >.left {      
+  padding-top: 48px;
+}
+
+.dv-wrapper >.main-content >.right {
+  overflow: hidden;
+  position: relative;
+  height: 100vh;
+  z-index: -1;
+}
+
+.dv-wrapper >.main-content >.right >.image {
+  position: absolute;
+  height: 100%;
+  min-width: 100%;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
