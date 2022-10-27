@@ -4,8 +4,8 @@
   padding-left: 32px;
   padding-top: 2px;
   cursor: pointer;
-  font-size: calc(var(--font-size-base) + 8px);
-  font-family: var(--font-family-base); 
+  font-size: calc(var(--dv-font-size-base) + 8px);
+  font-family: var(--dv-font-family-base); 
 }
 
 /* Esconde o radio button nativo do browser */

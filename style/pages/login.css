@@ -1,0 +1,36 @@
+.dv-login >.dv-wrapper >.main-content >.left >.radio-buttons {
+  margin-bottom: 42px;
+}
+
+.dv-login >.dv-wrapper >.main-content >.left >.radio-buttons >.title {
+  font-size: calc(var(--dv-font-size-base) + 8px);
+  font-weight: 800;
+  margin-bottom: 16px;
+}
+
+.dv-login >.dv-wrapper >.main-content >.left >.radio-buttons >.buttons >.dv-radio {
+  margin-right: 70px;
+}
+
+.dv-login >.dv-wrapper >.main-content >.left >.main-title {
+  font-weight: 800;
+  margin-bottom: 40px;
+}
+
+.dv-login >.dv-wrapper >.main-content >.left >.main-title >.up {
+  font-size: calc(var(--dv-font-size-base) + 38px);
+  display: block;
+  margin-bottom: 7px;
+}
+
+.dv-login >.dv-wrapper >.main-content >.left >.main-title >.down {
+  font-size: calc(var(--dv-font-size-base) + 22px);
+}
+
+.dv-login >.dv-wrapper >.main-content >.left >.steps {
+  display: block;
+  font-weight: 800;
+  font-size: calc(var(--dv-font-size-base) + 4px);
+  color: var(--dv-color-gray);
+  margin-bottom: 13px;
+} 

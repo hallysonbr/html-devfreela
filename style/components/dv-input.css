@@ -1,6 +1,6 @@
 .dv-input {
-  font-family: var(--font-family-base); 
-  font-size: calc(var(--font-size-base) + 8px);
+  font-family: var(--dv-font-family-base); 
+  font-size: calc(var(--dv-font-size-base) + 8px);
   border: none;
   background: none;
   border-bottom: 1px solid var(--dv-color-gray-light);
@@ -8,6 +8,7 @@
   transition: border-color 0.5s;
   padding-bottom: 10px;
   width: 100%;
+  margin-bottom: 32px;
 }
 
 .dv-input:focus {

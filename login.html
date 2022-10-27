@@ -57,20 +57,43 @@
         </header>
         <main class="main-content">
           <div class="left">
-            <!-- <button class="dv-button">Continuar</button> -->
-            <!-- <input class="dv-input" placeholder="Título" /> -->
-
             <!-- <div class="dv-radio">
               <label for="dev">Dev</label>
               <input id="dev" type="radio" />
             </div> -->
+            <span class="steps">Passo 1 de 2</span>
 
-            <!--Criando Radio Button do zero-->
-            <label class="dv-radio">
-              Dev
-              <input type="radio" />
-              <span class="checkmark"></span>
-            </label>
+            <h1 class="main-title">
+              <span class="up">Olá!</span>
+              <span class="down">Vamos criar seu cadastro.</span>
+            </h1>
+            <div class="radio-buttons">
+              <h3 class="title">Qual o seu perfil?</h3>
+              <div class="buttons">
+                <!--Criando Radio Button do zero-->
+                <label class="dv-radio">
+                  Dev
+                  <input name="cargo" type="radio" />
+                  <span class="checkmark"></span>
+                </label>
+
+                <label class="dv-radio">
+                  Cliente
+                  <input name="cargo" type="radio" />
+                  <span class="checkmark"></span>
+                </label>
+              </div>
+            </div>
+
+            <input class="dv-input" placeholder="Nome Completo" />
+            <input
+              type="date"
+              class="dv-input"
+              placeholder="Data de Nascimento" />
+            <input type="email" class="dv-input" placeholder="Email" />
+            <input type="password" class="dv-input" placeholder="Senha" />
+
+            <button class="dv-button">Continuar</button>
           </div>
           <div class="right">
             <img
