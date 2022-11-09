@@ -9,6 +9,10 @@
   padding-top: var(--dv-header-size);
 }
 
+.dv-wrapper >.main-content.-one-col {
+  grid-template-columns: 1fr;
+} 
+
 .dv-wrapper >.main-content >.left {      
   padding-top: 48px;
   max-width: 350px;

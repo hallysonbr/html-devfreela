@@ -12,6 +12,12 @@
   transition: background-color 0.5s;
 }
 
+.dv-button.-small {
+  font-size: calc(var(--dv-font-size-base) + 4px);
+  font-weight: 600;
+  padding: 12px 30px;
+}
+
 .dv-button:hover {
   background-color: var(--dv-color-primary-light);
 }
