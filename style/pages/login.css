@@ -1,5 +1,10 @@
+.dv-login >.dv-wrapper >.main-content >.left {    
+  max-width: 350px;
+  margin: auto;
+}
+
 .dv-login >.dv-wrapper >.main-content >.left >.radio-buttons {
-  margin-bottom: 42px;
+  margin-bottom: 30px;
 }
 
 .dv-login >.dv-wrapper >.main-content >.left >.radio-buttons >.title {
@@ -14,17 +19,17 @@
 
 .dv-login >.dv-wrapper >.main-content >.left >.main-title {
   font-weight: 800;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
 
 .dv-login >.dv-wrapper >.main-content >.left >.main-title >.up {
-  font-size: calc(var(--dv-font-size-base) + 38px);
+  font-size: calc(var(--dv-font-size-base) + 30px);
   display: block;
   margin-bottom: 7px;
 }
 
 .dv-login >.dv-wrapper >.main-content >.left >.main-title >.down {
-  font-size: calc(var(--dv-font-size-base) + 22px);
+  font-size: calc(var(--dv-font-size-base) + 18px);
 }
 
 .dv-login >.dv-wrapper >.main-content >.left >.steps {
