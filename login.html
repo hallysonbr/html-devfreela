@@ -42,6 +42,9 @@
     <link rel="stylesheet" href="style/pages/login.css" />
 
     <!-- 6) TRUMPS -->
+
+    <!-- SCRIPTS -->
+    <script src="scripts/login.js"></script>
   </head>
   <body>
     <div class="dv-login">
@@ -57,12 +60,11 @@
           </div>
         </header>
         <main class="main-content">
-          <div class="left">
+          <form class="left" onsubmit="cadastrar()" action="javascript:void(0)">
             <!-- <div class="dv-radio">
               <label for="dev">Dev</label>
               <input id="dev" type="radio" />
             </div> -->
-            <span class="steps">Passo 1 de 2</span>
 
             <h1 class="main-title">
               <span class="up">Olá!</span>
@@ -93,16 +95,32 @@
               </div>
             </div>
 
-            <input class="dv-input" placeholder="Nome Completo" />
             <input
+              required
+              id="fullName"
+              class="dv-input"
+              placeholder="Nome Completo" />
+            <input
+              required
+              id="birthDate"
               type="date"
               class="dv-input"
               placeholder="Data de Nascimento" />
-            <input type="email" class="dv-input" placeholder="Email" />
-            <input type="password" class="dv-input" placeholder="Senha" />
+            <input
+              required
+              id="email"
+              type="email"
+              class="dv-input"
+              placeholder="Email" />
+            <input
+              required
+              id="password"
+              type="password"
+              class="dv-input"
+              placeholder="Senha" />
 
-            <button class="dv-button">Continuar</button>
-          </div>
+            <button type="submit" class="dv-button">Continuar</button>
+          </form>
           <div class="right">
             <img
               class="image"
