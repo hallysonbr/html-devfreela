@@ -37,7 +37,12 @@ function cadastrar() {
   })
   .then(response => response.json())
   .then(response => {
+    localStorage.setItem('user.name', response.fullName);
+    localStorage.setItem('role', response.role === 'Dev' ? 'Desenvolvedor' : 'Cliente');
+    
     alert('Usuário cadastrado com sucesso!');
+    window.location.href = "list.html";
+    
     console.log(response);
   })
   .catch(error => {

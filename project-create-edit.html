@@ -66,15 +66,26 @@
           <a href="list.html" class="back-btn material-icons">
             keyboard_arrow_left
           </a>
-          <div class="left">
+          <form
+            class="left"
+            onsubmit="createOrEdit()"
+            action="javascript:void(0)">
             <h1 class="main-title" id="main-title"></h1>
 
-            <input class="dv-input" placeholder="Título" />
-            <input class="dv-input" placeholder="Custo Total" />
-            <textarea class="dv-input" placeholder="Descrição"></textarea>
+            <input required id="title" class="dv-input" placeholder="Título" />
+            <input
+              required
+              id="totalCost"
+              class="dv-input"
+              placeholder="Custo Total" />
+            <textarea
+              required
+              id="description"
+              class="dv-input"
+              placeholder="Descrição"></textarea>
 
-            <button class="dv-button" id="action-button"></button>
-          </div>
+            <button type="submit" class="dv-button" id="action-button"></button>
+          </form>
           <div class="right">
             <img
               class="image"
