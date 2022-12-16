@@ -7,8 +7,25 @@ const screenType = params.id ? 'edit' : 'create';
 
 window.onload = function() {
   setScreenTypeTexts();
+  fillInputs();
 }
 
+function fillInputs() {
+  if(screenType === 'edit') {
+    fetch(`https://637c0ed76f4024eac21d48b8.mockapi.io/api/projects/${params.id}`)
+    .then(response => response.json())
+    .then(project => {
+      document.querySelector("#title").value = project.title;
+      document.querySelector("#totalCost").value = project.totalCost;
+      document.querySelector("#description").value = project.description;
+    })
+    .catch(error => {
+      alert('Erro no servidor!');
+      console.log(error);
+    })
+  }
+}
+ 
 function setScreenTypeTexts() {
    //  MODO CRIAR
    if(screenType == 'create') {
@@ -29,7 +46,7 @@ function createOrEdit() {
     title: document.querySelector("#title").value,
     totalCost: document.querySelector("#totalCost").value,
     description: document.querySelector("#description").value,
-    idClient: 1,
+    idClient: localStorage.getItem("clientId"),
   }
 
   //Enviar para a api
@@ -44,6 +61,7 @@ function createOrEdit() {
   .then(response => {
     alert(`Projeto ${screenType === 'edit' ? 'atualizado' : 'cadastrado'} com sucesso!`);
     console.log(response);
+    window.location.href = "list.html";
   })
   .catch(error => {
     alert('Erro no servidor!');

@@ -39,11 +39,11 @@ function cadastrar() {
   .then(response => {
     localStorage.setItem('user.name', response.fullName);
     localStorage.setItem('role', response.role === 'Dev' ? 'Desenvolvedor' : 'Cliente');
+    localStorage.setItem('clientId', response.id);
     
     alert('Usuário cadastrado com sucesso!');
-    window.location.href = "list.html";
-    
     console.log(response);
+    window.location.href = "list.html";    
   })
   .catch(error => {
     alert('Erro no servidor!');
